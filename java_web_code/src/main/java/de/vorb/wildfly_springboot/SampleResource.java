@@ -12,7 +12,7 @@ public class SampleResource {
     }
     
     @RequestMapping("/zaryab")
-    public String info() {
+    public String newinfo() {
         return "Hello! This sample Java Web App was created with wildfly springboot by Zaryab Husain Ghori.";
     }
 

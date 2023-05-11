@@ -11,9 +11,10 @@ public class SampleResource {
         return "Hello World!";
     }
     
-    @RequestMapping("/zaryab")
-    public String newinfo() {
-        return "Hello! This sample Java Web App was created with wildfly springboot by Zaryab Husain Ghori.";
+    @RequestMapping(value = "/ex/info", method = RequestMethod.GET)
+    @ResponseBody
+        public String getInfo() {
+        return "This sample Java Web App is created using Spring Boot by Zaryab Husain Ghori";
     }
 
 }
